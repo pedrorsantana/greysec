@@ -8,7 +8,9 @@
 
 <div style="text-align:center"><img alt="Alien" src="https://cdn.bulbagarden.net/upload/f/fd/605Elgyem.png"/></div>
 
-> Greysec is a firewall based application that consume greynoise.io api.
+> Greysec for packets that pass through the network interface and performs queries on a large internet base (greynoise.io) responsible for mapping robots that perform cyberattack and enumeration robots. When the communication with one of these robots is identified, it is automatically banned through iptables protecting your machine from being enumerated or invaded.
+
+> With greysec you will be protected from worms that try to carry out the most varied attacks (Ransoware, Enumeration, Botminer, Botnet, etc.)
 
 ## Requirements
 
@@ -24,6 +26,12 @@ Example:
 #  docker run --cap-add=NET_ADMIN --cap-add=NET_RAW -it ubuntu
 #  root(Inside Docker): apt-get update;apt-get install -y iptables;    
 ``` 
+## Start using
+
+```sh
+# curl -LO https://github.com/pedrorsantana/greysec/releases/download/v1.0/greysec; sudo chmod +x greysec; sudo mv greysec /bin/greysec;
+# greysec --help
+```
 
 ## Compiling
 
