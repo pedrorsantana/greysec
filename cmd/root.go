@@ -34,8 +34,10 @@ var rootCmd = &cobra.Command{
 Greysec is able to block automated attacks and also block automatic scanners
  like shodan.io and zoomeye.org.
 
+Note: Greysec requires root privileges to sniff network.
+
 Usage Example:
-  greysec --key "XPTO" [--interface eth0] [--cacheSize 120]
+sudo greysec --key "XPTO" [--interface eth0] [--cacheSize 120]
 
 Feel free to contribute in Github: https://github.com/pedrorsantana/greysec/
 `,

@@ -7,15 +7,24 @@
 </p>
 
 <div style="text-align:center"><img alt="Alien" src="https://cdn.bulbagarden.net/upload/f/fd/605Elgyem.png"/></div>
+
 > Greysec is a firewall based application that consume greynoise.io api.
 
-## Running in docker
+## Requirements
 
-For use in docker install iptable and define --cap-add=NET_ADMIN --cap-add=NET_RAW
+>To block access we use iptables
+```sh
+#  sudo apt-get install -y iptables
+``` 
+
+
+>Docker needs iptable installed and cap run properties defined (--cap-add=NET_ADMIN --cap-add=NET_RAW)
 Example:
 ```sh
 #  docker run --cap-add=NET_ADMIN --cap-add=NET_RAW -it ubuntu
-```
+#  root(Inside Docker): apt-get update;apt-get install -y iptables;    
+``` 
+
 ## Compiling
 
 ```sh
